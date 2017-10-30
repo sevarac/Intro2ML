@@ -1,0 +1,20 @@
+Iteration:1, TotalError:0.54057497, ErrorChange:0.54057497
+Iteration:2, TotalError:0.39101663, ErrorChange:-0.14955834
+Iteration:3, TotalError:0.28177673, ErrorChange:-0.109239906
+Iteration:4, TotalError:0.2041328, ErrorChange:-0.07764393
+Iteration:5, TotalError:0.1513228, ErrorChange:-0.05281
+Iteration:6, TotalError:0.11563662, ErrorChange:-0.03568618
+Iteration:7, TotalError:0.09097972, ErrorChange:-0.0246569
+Iteration:8, TotalError:0.073487744, ErrorChange:-0.017491974
+Iteration:9, TotalError:0.060738355, ErrorChange:-0.012749389
+Iteration:10, TotalError:0.05121178, ErrorChange:-0.009526573
+Iteration:11, TotalError:0.04391178, ErrorChange:-0.0073000006
+Iteration:12, TotalError:0.03818977, ErrorChange:-0.0057220124
+Iteration:13, TotalError:0.033617977, ErrorChange:-0.0045717917
+Iteration:14, TotalError:0.029903663, ErrorChange:-0.0037143137
+Iteration:15, TotalError:0.026841441, ErrorChange:-0.0030622222
+Iteration:16, TotalError:0.024283791, ErrorChange:-0.0025576502
+Iteration:17, TotalError:0.022122616, ErrorChange:-0.002161175
+Iteration:18, TotalError:0.020277433, ErrorChange:-0.0018451829
+Iteration:19, TotalError:0.01868741, ErrorChange:-0.0015900228
+Total Training Time: 11737ms
