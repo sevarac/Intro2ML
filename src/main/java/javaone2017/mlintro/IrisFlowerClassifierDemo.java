@@ -1,20 +1,21 @@
 package javaone2017.mlintro;
 
-import deepnetts.core.net.layers.ActivationType;
-import deepnetts.core.net.train.BackpropagationTrainer;
-import deepnetts.core.net.layers.SoftmaxOutputLayer;
-import deepnetts.core.net.loss.CrossEntropyLoss;
-import deepnetts.util.DeepNettsException;
-import deepnetts.core.data.DataSet;
-import deepnetts.core.data.BasicDataSetItem;
-import deepnetts.core.net.FeedForwardNetwork;
-import deepnetts.util.Tensor;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Arrays;
+
+import deepnetts.data.BasicDataSetItem;
+import deepnetts.data.DataSet;
+import deepnetts.net.FeedForwardNetwork;
+import deepnetts.net.layers.ActivationType;
+import deepnetts.net.layers.SoftmaxOutputLayer;
+import deepnetts.net.loss.CrossEntropyLoss;
+import deepnetts.net.train.BackpropagationTrainer;
+import deepnetts.util.DeepNettsException;
+import deepnetts.util.Tensor;
 
 /**
  * Iris flower classification is a hello world classificcation problem. Classify
@@ -31,11 +32,11 @@ public class IrisFlowerClassifierDemo {
 
         // CREATE A NEURAL NETWORK INSTANCE WITH SPECIFIED ARCHITECTURE
         FeedForwardNetwork deepNett = new FeedForwardNetwork.Builder()
-                .inputLayer(4)
-                .fullyConnectedLayer(20, ActivationType.TANH)
-                .fullyConnectedLayer(13)
-                .outputLayer(3, SoftmaxOutputLayer.class)
-                .lossFunction(CrossEntropyLoss.class)
+                .addInputLayer(4)
+                .addFullyConnectedLayer(20, ActivationType.TANH)
+                .addFullyConnectedLayer(13)
+                .addOutputLayer(3, ActivationType.SOFTMAX)
+                .withLossFunction(CrossEntropyLoss.class)
                 .build();
 
         // CREATE AN INSTANCE OF TRAINING ALGORITHM
